@@ -1,0 +1,50 @@
+controller_list:
+  - name: fake_arm_left_controller
+    joints:
+      - LShoulderPitch
+      - LShoulderYaw
+      - LElbowRoll
+      - LElbowYaw
+      - LWristRoll
+      - LWristYaw
+      - LWristPitch
+  - name: fake_arm_right_controller
+    joints:
+      - RShoulderPitch
+      - RShoulderYaw
+      - RElbowRoll
+      - RElbowYaw
+      - RWristRoll
+      - RWristYaw
+      - RWristPitch
+  - name: fake_hand_left_controller
+    joints:
+      - LWristPitch
+      - LHand
+  - name: fake_hand_right_controller
+    joints:
+      - RWristPitch
+      - RHand
+  - name: fake_head_controller
+    joints:
+      - NeckYaw
+      - NeckPitch
+      - HeadPitch
+      - HeadRoll
+  - name: fake_torso_controller
+    joints:
+      - TrunkYaw
+  - name: fake_leg_left_controller
+    joints:
+      - LHipRoll
+      - LHipPitch
+      - LKneePitch
+      - LAnklePitch
+      - LAnkleRoll
+  - name: fake_leg_right_controller
+    joints:
+      - RHipRoll
+      - RHipPitch
+      - RKneePitch
+      - RAnklePitch
+      - RAnkleRoll

@@ -1,0 +1,80 @@
+controller_manager_ns: ''
+controller_list:
+  - name: romeo_dcm/RightArm_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - RShoulderPitch
+      - RShoulderYaw
+      - RElbowRoll
+      - RElbowYaw
+  - name: romeo_dcm/LeftArm_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - LShoulderPitch
+      - LShoulderYaw
+      - LElbowRoll
+      - LElbowYaw
+#  - name: romeo_dcm/RightHand_controller
+#    action_ns: follow_joint_trajectory
+#    type: FollowJointTrajectory
+#    default: true
+#    joints:
+#      - RWristRoll
+#      - RWristYaw
+#      - RWristPitch     
+#      - RHand
+##      - RFinger11
+  - name: romeo_dcm/LeftHand_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - LWristRoll
+      - LWristYaw
+      - LWristPitch
+      - LHand
+#      - LFinger11
+  - name: romeo_dcm/Torso_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - TrunkYaw
+#      - waist
+#  - name: romeo_dcm/LeftLeg_controller
+#    action_ns: follow_joint_trajectory
+#    type: FollowJointTrajectory
+#    default: true
+#    joints:
+#      - LHipYaw
+#      - LHipRoll
+#      - LHipPitch
+#      - LKneePitch
+#      - LAnklePitch
+#      - LAnkleRoll
+# #     - LToePitch
+#  - name: romeo_dcm/RightLeg_controller
+#    action_ns: follow_joint_trajectory
+#    type: FollowJointTrajectory
+#    default: true
+#    joints:
+#      - RHipYaw
+#      - RHipRoll
+#      - RHipPitch
+#      - RKneePitch
+#      - RAnklePitch
+#      - RAnkleRoll
+# #     - RToePitch
+#  - name: romeo_dcm/Head_controller
+#    action_ns: follow_joint_trajectory
+#    type: FollowJointTrajectory
+#    default: true
+#    joints:
+#      - NeckYaw
+#      - NeckPitch
+#      - HeadPitch
+#      - HeadRoll
