@@ -18,9 +18,10 @@ For the dcm packages you need to compile the C++ nodes.  In order to compile rom
 
 Then you can run the usual 
 
-''
-catkin_make
-''
+.. code-block:: bash
+
+    catkin_make
+
 And your ready to play with your romeo
 
 2 Run MoveIt
@@ -31,9 +32,9 @@ Without robot
 You can run this moveit package either unconnected to any robot or attached to a robot (real or simulated):
 For a standalone execution :
 
-''
+.. code-block:: bash
+
     roslaunch romeo_moveit_config demo.launch
-''
 
 On a real ROMEO
 ---------------
@@ -46,15 +47,15 @@ To launch it on a real Romeo :
 Modify the bringup configuration file : romeo_dcm_bringup/config/romeo_dcm.yaml
 Set the rosparam "RobotIP" to your Romeo's IP address
 
-``
-roslaunch romeo_dcm_bringup romeo_dcm_bringup_remote.launch
-``
+.. code-block:: bash
+
+    roslaunch romeo_dcm_bringup romeo_dcm_bringup_remote.launch
 
 Wait until romeo_dcm_bringup node is ready, then run:
 
-``
-roslaunch romeo_moveit_config moveit_planner_romeo.launch
-``
+.. code-block:: bash
+
+    roslaunch romeo_moveit_config moveit_planner_romeo.launch
 
 3 Use Moveit:
 =============
