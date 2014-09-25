@@ -19,7 +19,7 @@ For the dcm packages you need to compile the C++ nodes.  In order to compile rom
 Then you can run the usual 
 
 ''
-caktin_make
+catkin_make
 ''
 And your ready to play with your romeo
 
