@@ -15,6 +15,14 @@
     <group name="arm_right">
         <chain base_link="torso" tip_link="RElbowYawLink" />
     </group> 
+    <group name="arm_hand_left">
+<!--         <chain base_link="torso" tip_link="LFinger11Link" />  -->
+         <chain base_link="torso" tip_link="l_gripper" />
+    </group>
+    <group name="arm_hand_right">
+<!--        <chain base_link="torso" tip_link="RFinger11Link" /> -->
+        <chain base_link="torso" tip_link="r_gripper" /> 
+    </group> 
     <group name="hand_left">
         <chain base_link="LWristYawLink" tip_link="LFinger11Link" /> 
 <!--        <chain base_link="LWristYawLink" tip_link="l_wrist" /> -->
