@@ -2,8 +2,8 @@
 Changelog for package romeo_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.2 (2014-10-01)
+------------------
 * added kinematics chains for complete arms
 * Update README.rst
 * fix dependencies
