@@ -2,6 +2,14 @@
 Changelog for package romeo_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* added kinematics chains for complete arms
+* Update README.rst
+* fix dependencies
+* fixed dependencies and update README
+* Contributors: Arguedas Mikael, margueda
+
 0.2.1 (2014-09-09)
 ------------------
 * update according to new URDF model
