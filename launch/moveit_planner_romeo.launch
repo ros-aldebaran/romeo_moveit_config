@@ -6,6 +6,6 @@
 	</include>
 
 	<!-- Start Rviz -->
-	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find romeo_moveit_config)/launch/moveit.rviz" />
-	
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find romeo_moveit_config)/config/moveit.rviz" />
+
 </launch>

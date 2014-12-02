@@ -8,6 +8,16 @@ controller_list:
       - LWristRoll
       - LWristYaw
       - LWristPitch
+  - name: fake_arm_hand_left_controller
+    joints:
+      - LShoulderPitch
+      - LShoulderYaw
+      - LElbowRoll
+      - LElbowYaw
+      - LWristRoll
+      - LWristYaw
+      - LWristPitch
+      - LHand
   - name: fake_arm_right_controller
     joints:
       - RShoulderPitch
@@ -17,12 +27,14 @@ controller_list:
       - RWristRoll
       - RWristYaw
       - RWristPitch
-  - name: fake_hand_left_controller
+  - name: fake_arm_hand_right_controller
     joints:
-      - LWristPitch
-      - LHand
-  - name: fake_hand_right_controller
-    joints:
+      - RShoulderPitch
+      - RShoulderYaw
+      - RElbowRoll
+      - RElbowYaw
+      - RWristRoll
+      - RWristYaw
       - RWristPitch
       - RHand
   - name: fake_head_controller
