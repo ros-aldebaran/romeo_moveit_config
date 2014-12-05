@@ -2,8 +2,8 @@
 Changelog for package romeo_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.4 (2014-12-05)
+------------------
 * fixed package version
 * Update package.xml
 * 0.2.1
