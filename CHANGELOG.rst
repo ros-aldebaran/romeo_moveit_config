@@ -4,6 +4,15 @@ Changelog for package romeo_moveit_config
 
 Forthcoming
 -----------
+* fixed package version
+* Update package.xml
+* 0.2.1
+* update changelog
+* fixed link to config file
+* adapt to new model link names
+  add detection required files
+* Contributors: Arguedas Mikael, Mikael ARGUEDAS
+
 * fixed link to config file
 * adapt to new model link names
   add detection required files
