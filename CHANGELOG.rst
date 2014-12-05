@@ -2,6 +2,13 @@
 Changelog for package romeo_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fixed link to config file
+* adapt to new model link names
+  add detection required files
+* Contributors: Mikael ARGUEDAS
+
 0.2.2 (2014-10-01)
 ------------------
 * added kinematics chains for complete arms
