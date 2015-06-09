@@ -1,0 +1,8 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: romeo_description
+    relative_path: urdf/romeo_generated_urdf/romeo.urdf
+  SRDF:
+    relative_path: config/romeoH37.srdf
+  CONFIG:
+    generated_timestamp: 1432545909
