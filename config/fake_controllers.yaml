@@ -1,5 +1,5 @@
 controller_list:
-  - name: fake_arm_left_controller
+  - name: fake_left_arm_controller
     joints:
       - LShoulderPitch
       - LShoulderYaw
@@ -7,7 +7,6 @@ controller_list:
       - LElbowYaw
       - LWristRoll
       - LWristYaw
-      - LWristPitch
   - name: fake_arm_hand_left_controller
     joints:
       - LShoulderPitch
@@ -18,7 +17,11 @@ controller_list:
       - LWristYaw
       - LWristPitch
       - LHand
-  - name: fake_arm_right_controller
+  - name: fake_left_hand_controller
+    joints:
+      - LWristPitch
+      - LHand
+  - name: fake_right_arm_controller
     joints:
       - RShoulderPitch
       - RShoulderYaw
@@ -26,7 +29,6 @@ controller_list:
       - RElbowYaw
       - RWristRoll
       - RWristYaw
-      - RWristPitch
   - name: fake_arm_hand_right_controller
     joints:
       - RShoulderPitch
@@ -35,6 +37,10 @@ controller_list:
       - RElbowYaw
       - RWristRoll
       - RWristYaw
+      - RWristPitch
+      - RHand
+  - name: fake_right_hand_controller
+    joints:
       - RWristPitch
       - RHand
   - name: fake_head_controller
@@ -60,3 +66,6 @@ controller_list:
       - RKneePitch
       - RAnklePitch
       - RAnkleRoll
+  - name: fake_base_controller
+    joints:
+      - virtual_odom

@@ -1,0 +1,16 @@
+sensors:
+#  - sensor_plugin: occupancy_map_monitor/DepthImageOctomapUpdater
+    image_topic: /softkinetic_camera/depth/image_raw #/camera/depth_registered/image_raw
+    point_cloud_topic: /softkinetic_camera/depth/points2 #/camera/depth_registered/points
+    max_range: 5.0
+    point_subsample: 1
+    queue_size: 5
+    near_clipping_plane_distance: 0.3
+    far_clipping_plane_distance: 3.0
+    shadow_threshold: 40.0 #0.8 #0.2 #filtering below the robot's link
+    padding_scale: 30.0 #20.0 #4.0
+    padding_offset: 0.13 #0.11 #0.03
+    skip_vertical_pixels: 1
+    skip_horizontal_pixels: 1
+#    filtered_cloud_topic: filtered_cloud
+#    filtered_cloud_topic: filtered_cloud

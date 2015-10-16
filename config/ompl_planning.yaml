@@ -21,7 +21,7 @@ planner_configs:
     type: geometric::PRM
   PRMstarkConfigDefault:
     type: geometric::PRMstar
-arm_left:
+left_arm:
   planner_configs:
     - SBLkConfigDefault
     - ESTkConfigDefault
@@ -34,7 +34,8 @@ arm_left:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-  projection_evaluator: joints(LShoulderPitch,LShoulderYaw)
+  #projection_evaluator: joints(LShoulderPitch,LShoulderYaw)
+  projection_evaluator: joints(LWristYaw)
   longest_valid_segment_fraction: 0.05
 arm_hand_left:
   planner_configs:
@@ -51,7 +52,7 @@ arm_hand_left:
     - PRMstarkConfigDefault
   projection_evaluator: joints(LShoulderPitch,LShoulderYaw)
   longest_valid_segment_fraction: 0.05
-arm_right:
+right_arm:
   planner_configs:
     - SBLkConfigDefault
     - ESTkConfigDefault
@@ -64,7 +65,8 @@ arm_right:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-  projection_evaluator: joints(RShoulderPitch,RShoulderYaw)
+  #projection_evaluator: joints(RShoulderPitch,RShoulderYaw)
+  projection_evaluator: joints(RWristYaw)
   longest_valid_segment_fraction: 0.05
 arm_hand_right:
   planner_configs:
@@ -80,6 +82,38 @@ arm_hand_right:
     - PRMkConfigDefault
     - PRMstarkConfigDefault
   projection_evaluator: joints(RShoulderPitch,RShoulderYaw)
+  longest_valid_segment_fraction: 0.05
+left_hand:
+  planner_configs:
+    - SBLkConfigDefault
+    - ESTkConfigDefault
+    - LBKPIECEkConfigDefault
+    - BKPIECEkConfigDefault
+    - KPIECEkConfigDefault
+    - RRTkConfigDefault
+    - RRTConnectkConfigDefault
+    - RRTstarkConfigDefault
+    - TRRTkConfigDefault
+    - PRMkConfigDefault
+    - PRMstarkConfigDefault
+  projection_evaluator: joints(LWristPitch,LHand)
+  #LFinger11)
+  longest_valid_segment_fraction: 0.05
+right_hand:
+  planner_configs:
+    - SBLkConfigDefault
+    - ESTkConfigDefault
+    - LBKPIECEkConfigDefault
+    - BKPIECEkConfigDefault
+    - KPIECEkConfigDefault
+    - RRTkConfigDefault
+    - RRTConnectkConfigDefault
+    - RRTstarkConfigDefault
+    - TRRTkConfigDefault
+    - PRMkConfigDefault
+    - PRMstarkConfigDefault
+  projection_evaluator: joints(RWristPitch,RHand)
+  #RFinger11
   longest_valid_segment_fraction: 0.05
 head:
   planner_configs:
@@ -139,3 +173,16 @@ leg_right:
     - PRMstarkConfigDefault
   projection_evaluator: joints(RHipRoll,RHipPitch)
   longest_valid_segment_fraction: 0.05
+base:
+  planner_configs:
+    - SBLkConfigDefault
+    - ESTkConfigDefault
+    - LBKPIECEkConfigDefault
+    - BKPIECEkConfigDefault
+    - KPIECEkConfigDefault
+    - RRTkConfigDefault
+    - RRTConnectkConfigDefault
+    - RRTstarkConfigDefault
+    - TRRTkConfigDefault
+    - PRMkConfigDefault
+    - PRMstarkConfigDefault
