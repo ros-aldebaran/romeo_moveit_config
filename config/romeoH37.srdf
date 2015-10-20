@@ -69,13 +69,6 @@
         <joint name="RWristPitch" />
         <joint name="RHand" />
     </group>
-    <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
-    <!-- <group_state name="look_down" group="head">
-        <joint name="HeadPitch" value="0" />
-        <joint name="HeadRoll" value="0" />
-        <joint name="NeckPitch" value="0.3557" />
-        <joint name="NeckYaw" value="0" />
-    </group_state> -->
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="left_eef" parent_link="LWristYaw_link" group="left_hand" />
     <end_effector name="right_eef" parent_link="RWristYaw_link" group="right_hand" />
@@ -83,6 +76,30 @@
     <virtual_joint name="virtual_odom" type="planar" parent_frame="odom" child_link="base_link" />
     <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
     <passive_joint name="virtual_odom" />
+    <passive_joint name="LFinger11" />
+    <passive_joint name="LFinger12" />
+    <passive_joint name="LFinger13" />
+    <passive_joint name="LFinger21" />
+    <passive_joint name="LFinger22" />
+    <passive_joint name="LFinger23" />
+    <passive_joint name="LFinger31" />
+    <passive_joint name="LFinger32" />
+    <passive_joint name="LFinger33" />
+    <passive_joint name="LThumb1" />
+    <passive_joint name="LThumb2" />
+    <passive_joint name="LThumb3" />
+    <passive_joint name="RFinger11" />
+    <passive_joint name="RFinger12" />
+    <passive_joint name="RFinger13" />
+    <passive_joint name="RFinger21" />
+    <passive_joint name="RFinger23" />
+    <passive_joint name="RFinger31" />
+    <passive_joint name="RFinger22" />
+    <passive_joint name="RFinger32" />
+    <passive_joint name="RFinger33" />
+    <passive_joint name="RThumb1" />
+    <passive_joint name="RThumb2" />
+    <passive_joint name="RThumb3" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="Cap" link2="HeadRoll_link" reason="Adjacent" />
     <disable_collisions link1="Cap" link2="LEye" reason="Never" />
