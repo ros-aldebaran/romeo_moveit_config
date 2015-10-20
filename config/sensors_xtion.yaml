@@ -1,5 +1,4 @@
 sensors:
-  #- sensor_plugin: occupancy_map_monitor/DepthImageOctomapUpdater
   - sensor_plugin: occupancy_map_monitor/PointCloudOctomapUpdater
     image_topic: /camera/depth_registered/image_raw
     point_cloud_topic: /camera/depth_registered/points
