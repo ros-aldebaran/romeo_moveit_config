@@ -2,8 +2,8 @@
 Changelog for package romeo_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.5 (2015-10-21)
+------------------
 * cleaning package.xml
 * Configuring sensors to compute the Octomap
 * Regenerated with moveit_setup_assistant for the last URDF while naming planning groups to be compatible with romeo_moveit_config
