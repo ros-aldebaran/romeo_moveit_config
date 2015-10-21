@@ -2,6 +2,14 @@
 Changelog for package romeo_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* cleaning package.xml
+* Configuring sensors to compute the Octomap
+* Regenerated with moveit_setup_assistant for the last URDF while naming planning groups to be compatible with romeo_moveit_config
+* configuring end-effectors and renaming motor groups to be compatible with MoveIt simple grasps
+* Contributors: Natalia Lyubova, Vincent Rabaud
+
 0.2.4 (2014-12-05)
 ------------------
 * fixed package version
