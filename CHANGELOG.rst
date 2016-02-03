@@ -2,6 +2,11 @@
 Changelog for package romeo_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* update dependency list
+* Contributors: Mikael Arguedas
+
 0.2.5 (2015-10-21)
 ------------------
 * cleaning package.xml
