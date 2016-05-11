@@ -55,7 +55,7 @@ Wait until romeo_dcm_bringup node is ready, then run:
 
 .. code-block:: bash
 
-    roslaunch romeo_moveit_config moveit_planner_romeo.launch
+    roslaunch romeo_moveit_config moveit_planner.launch
 
 3 Use Moveit:
 =============
