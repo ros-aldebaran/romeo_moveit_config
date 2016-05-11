@@ -36,6 +36,11 @@ For a standalone execution :
 
     roslaunch romeo_moveit_config demo.launch
 
+Once launching the demo, you should see Romeo in MoveIt! GUI like this:
+
+.. image:: tuto/moveit_launch.png
+   :width: 100%
+
 On a real ROMEO
 ---------------
 To use moveit on a real robot you need to instanciate ros controllers on your Romeo.
@@ -55,7 +60,7 @@ Wait until romeo_dcm_bringup node is ready, then run:
 
 .. code-block:: bash
 
-    roslaunch romeo_moveit_config moveit_planner_romeo.launch
+    roslaunch romeo_moveit_config moveit_planner.launch
 
 3 Use Moveit:
 =============
