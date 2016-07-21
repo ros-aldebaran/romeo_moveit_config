@@ -2,6 +2,21 @@
 Changelog for package romeo_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update package.xml
+  removing the dependence on moveit_ros_visualization
+* Update package.xml
+  changing the maintainer
+* Update ompl_planning.yaml
+  fixing arm groups
+* Merge pull request `#5 <https://github.com/ros-aldebaran/romeo_moveit_config/issues/5>`_ from nlyubova/master
+  cleaning the launch file and readme
+* updating the tutorial
+* renaming demo_real.launch to moveit_planner.launch to keep the naming convention as fro Nao
+* using xacro command instead of the URDF file
+* Contributors: Natalia Lyubova, nlyubova
+
 0.2.6 (2016-02-03)
 ------------------
 * update dependency list
