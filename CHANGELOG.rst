@@ -2,8 +2,8 @@
 Changelog for package romeo_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.7 (2016-07-21)
+------------------
 * Update package.xml
   removing the dependence on moveit_ros_visualization
 * Update package.xml
