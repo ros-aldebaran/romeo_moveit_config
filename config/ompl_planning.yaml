@@ -139,7 +139,9 @@ torso:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-leg_left:
+  projection_evaluator: joints(TrunkYaw)
+  longest_valid_segment_fraction: 0.05
+left_leg:
   planner_configs:
     - SBLkConfigDefault
     - ESTkConfigDefault
@@ -152,7 +154,22 @@ leg_left:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-  projection_evaluator: joints(LHipRoll,LHipPitch)
+  projection_evaluator: joints(LHipYaw,LHipRoll)
+  longest_valid_segment_fraction: 0.05
+left_leg_torso:
+  planner_configs:
+    - SBLkConfigDefault
+    - ESTkConfigDefault
+    - LBKPIECEkConfigDefault
+    - BKPIECEkConfigDefault
+    - KPIECEkConfigDefault
+    - RRTkConfigDefault
+    - RRTConnectkConfigDefault
+    - RRTstarkConfigDefault
+    - TRRTkConfigDefault
+    - PRMkConfigDefault
+    - PRMstarkConfigDefault
+  projection_evaluator: joints(TrunkYaw,LHipYaw)
   longest_valid_segment_fraction: 0.05
 leg_right:
   planner_configs:
@@ -167,5 +184,50 @@ leg_right:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-  projection_evaluator: joints(RHipRoll,RHipPitch)
+  projection_evaluator: joints(RHipYaw,RHipRoll)
+  longest_valid_segment_fraction: 0.05
+right_leg_torso:
+  planner_configs:
+    - SBLkConfigDefault
+    - ESTkConfigDefault
+    - LBKPIECEkConfigDefault
+    - BKPIECEkConfigDefault
+    - KPIECEkConfigDefault
+    - RRTkConfigDefault
+    - RRTConnectkConfigDefault
+    - RRTstarkConfigDefault
+    - TRRTkConfigDefault
+    - PRMkConfigDefault
+    - PRMstarkConfigDefault
+  projection_evaluator: joints(TrunkYaw,RHipYaw)
+  longest_valid_segment_fraction: 0.05
+left_foot:
+  planner_configs:
+    - SBLkConfigDefault
+    - ESTkConfigDefault
+    - LBKPIECEkConfigDefault
+    - BKPIECEkConfigDefault
+    - KPIECEkConfigDefault
+    - RRTkConfigDefault
+    - RRTConnectkConfigDefault
+    - RRTstarkConfigDefault
+    - TRRTkConfigDefault
+    - PRMkConfigDefault
+    - PRMstarkConfigDefault
+  projection_evaluator: joints(LLeg_effector_fixedjoint)
+  longest_valid_segment_fraction: 0.05
+right_foot:
+  planner_configs:
+    - SBLkConfigDefault
+    - ESTkConfigDefault
+    - LBKPIECEkConfigDefault
+    - BKPIECEkConfigDefault
+    - KPIECEkConfigDefault
+    - RRTkConfigDefault
+    - RRTConnectkConfigDefault
+    - RRTstarkConfigDefault
+    - TRRTkConfigDefault
+    - PRMkConfigDefault
+    - PRMstarkConfigDefault
+  projection_evaluator: joints(RLeg_effector_fixedjoint)
   longest_valid_segment_fraction: 0.05
