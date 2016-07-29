@@ -24,12 +24,7 @@
     <group name="head">
         <chain base_link="torso" tip_link="HeadRoll_link" />
     </group>
-    <group name="leg_left">
-        <chain base_link="LHipYaw_link" tip_link="l_sole" />
-    </group>
-    <group name="leg_right">
-        <chain base_link="RHipYaw_link" tip_link="r_sole" />
-    </group>
+
     <group name="left_hand">
         <link name="LFinger11_link" />
         <link name="LFinger12_link" />
@@ -69,11 +64,48 @@
         <joint name="RWristPitch" />
         <joint name="RHand" />
     </group>
+
+    <group name="left_leg">
+      <link name="LHipYaw_link" />
+      <link name="LHip" />
+      <link name="LThigh" />
+      <link name="LTibia" />
+      <link name="LAnklePitch_link" />
+      <link name="l_ankle" />
+    </group>
+    <group name="left_leg_torso">
+        <chain base_link="torso" tip_link="l_ankle" />
+    </group>
+
+    <group name="right_leg">
+      <link name="RHipYaw_link" />
+      <link name="RHip" />
+      <link name="RThigh" />
+      <link name="RTibia" />
+      <link name="RAnklePitch_link" />
+      <link name="r_ankle" />
+    </group>
+    <group name="right_leg_torso">
+        <chain base_link="torso" tip_link="r_ankle" />
+    </group>
+
+    <group name="left_foot">
+        <link name="l_sole" />
+    </group>
+    <group name="right_foot">
+        <link name="r_sole" />
+    </group>
+
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="left_eef" parent_link="LWristYaw_link" group="left_hand" />
     <end_effector name="right_eef" parent_link="RWristYaw_link" group="right_hand" />
+
+    <end_effector name="left_foot" parent_link="l_ankle" group="left_foot" parent_group="left_leg" />
+    <end_effector name="right_foot" parent_link="r_ankle" group="right_foot" parent_group="right_leg" />
+
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="virtual_odom" type="planar" parent_frame="odom" child_link="base_link" />
+
     <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
     <passive_joint name="virtual_odom" />
     <passive_joint name="LFinger11" />
@@ -760,7 +792,23 @@
     <disable_collisions link1="l_ankle" link2="l_wrist" reason="Never" />
     <disable_collisions link1="l_ankle" link2="r_wrist" reason="Never" />
     <disable_collisions link1="l_ankle" link2="torso" reason="Never" />
+    <disable_collisions link1="l_ankle" link2="LFsrRearCenter_frame" reason="Never" />
+    <disable_collisions link1="l_ankle" link2="LFsrFrontCenter_frame" reason="Never" />
+    <disable_collisions link1="l_ankle" link2="LFsrFToeFrontRight_frame" reason="Never" />
+    <disable_collisions link1="l_ankle" link2="LFsrFToeFrontLeft_frame" reason="Never" />
+    <disable_collisions link1="l_ankle" link2="LFsrFToeRearRight_frame" reason="Never" />
+    <disable_collisions link1="l_ankle" link2="LFsrFToeRearLeft_frame" reason="Never" />
+    <disable_collisions link1="l_ankle" link2="LFsrHeelRight_frame" reason="Never" />
+    <disable_collisions link1="l_ankle" link2="LFsrHeelLeft_frame" reason="Never" />
     <disable_collisions link1="l_wrist" link2="r_ankle" reason="Never" />
     <disable_collisions link1="r_ankle" link2="r_wrist" reason="Never" />
     <disable_collisions link1="r_ankle" link2="torso" reason="Never" />
+    <disable_collisions link1="r_ankle" link2="RFsrRearCenter_frame" reason="Never" />
+    <disable_collisions link1="r_ankle" link2="RFsrFrontCenter_frame" reason="Never" />
+    <disable_collisions link1="r_ankle" link2="RFsrFToeFrontLeft_frame" reason="Never" />
+    <disable_collisions link1="r_ankle" link2="RFsrFToeFrontRight_frame" reason="Never" />
+    <disable_collisions link1="r_ankle" link2="RFsrFToeRearRight_frame" reason="Never" />
+    <disable_collisions link1="r_ankle" link2="RFsrFToeRearLeft_frame" reason="Never" />
+    <disable_collisions link1="r_ankle" link2="RFsrHeelRight_frame" reason="Never" />
+    <disable_collisions link1="r_ankle" link2="RFsrHeelLeft_frame" reason="Never" />
 </robot>

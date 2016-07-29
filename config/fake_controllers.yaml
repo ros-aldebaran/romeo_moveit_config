@@ -52,20 +52,46 @@ controller_list:
   - name: fake_torso_controller
     joints:
       - TrunkYaw
-  - name: fake_leg_left_controller
+  - name: fake_base_controller
     joints:
+      - virtual_odom
+  - name: fake_left_leg_controller
+    joints:
+      - LHipYaw
       - LHipRoll
       - LHipPitch
       - LKneePitch
       - LAnklePitch
       - LAnkleRoll
-  - name: fake_leg_right_controller
+  - name: fake_left_leg_torso_controller
     joints:
+      - TrunkYaw
+      - LHipYaw
+      - LHipRoll
+      - LHipPitch
+      - LKneePitch
+      - LAnklePitch
+      - LAnkleRoll
+  - name: fake_right_leg_controller
+    joints:
+      - RHipYaw
       - RHipRoll
       - RHipPitch
       - RKneePitch
       - RAnklePitch
       - RAnkleRoll
-  - name: fake_base_controller
+  - name: fake_right_leg_torso_controller
     joints:
-      - virtual_odom
+      - TrunkYaw
+      - RHipYaw
+      - RHipRoll
+      - RHipPitch
+      - RKneePitch
+      - RAnklePitch
+      - RAnkleRoll
+  - name: fake_left_foot_controller
+    joints:
+      - LLeg_effector_fixedjoint
+  - name: fake_right_foot_controller
+    joints:
+      - RLeg_effector_fixedjoint
