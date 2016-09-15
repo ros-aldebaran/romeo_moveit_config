@@ -12,9 +12,9 @@ The moveit package must be run on a remote computer and not directly on your rob
 1 Compile the package
 =====================
 
-romeo_moveit_config package doesn't need any compilation so running rospack profile should be enough
+romeo_moveit_config package doesn't need any compilation, so running rospack profile should be enough.
 
-For the dcm packages you need to compile the C++ nodes.  In order to compile romeo_dcm packages, you need to set the environment variable AL_DIR to the path to naoqiSDK-c++ on your computer.
+For the dcm packages you need to compile the C++ nodes.  In order to compile romeo_dcm packages, you need to set the environment variable AL_DIR to the path to NAOqiSDK-c++ on your computer.
 
 Then you can run the usual 
 
@@ -27,7 +27,7 @@ And your ready to play with your romeo
 2 Run MoveIt
 ============
 
-Without robot
+Without a robot
 -------------
 You can run this moveit package either unconnected to any robot or attached to a robot (real or simulated):
 For a standalone execution :
@@ -43,30 +43,57 @@ Once launching the demo, you should see Romeo in MoveIt! GUI like this:
 
 On a real ROMEO
 ---------------
-To use moveit on a real robot you need to instanciate ros controllers on your Romeo.
-To do so you need the romeo_dcm packages (in the metapackage romeo_robot : https://github.com/ros-aldebaran/romeo_robot)
+To use MoveIt! on a real robot, you need to instanciate ROS controllers on your Romeo.
+To do so, you need:
+   - romeo_dcm_bringup (https://github.com/ros-aldebaran/romeo_dcm_robot)
+   - romeo_control (https://github.com/ros-aldebaran/romeo_virtual)
 
-To launch it on a real Romeo : 
+First, set NAO_IP environment variable to your robot's IP address:
 
-(First, set the NAO_IP environment variable to your Romeo's ip.)
-Modify the bringup configuration file : romeo_dcm_bringup/config/romeo_dcm.yaml
-Set the rosparam "RobotIP" to your Romeo's IP address
+.. code-block:: bash
+
+    export NAO_IP=<YOUR_ROBOT_IP>
+
+Launch the DCM bringup:
 
 .. code-block:: bash
 
     roslaunch romeo_dcm_bringup romeo_dcm_bringup_remote.launch
 
-Wait until romeo_dcm_bringup node is ready, then run:
+Wait until it is ready, then run:
 
 .. code-block:: bash
 
     roslaunch romeo_moveit_config moveit_planner.launch
 
+
+On a simulated robot (in Gazebo)
+------------------------------
+To use MoveIt! with Gazebo simulation, you need:
+   - romeo_dcm_bringup (https://github.com/ros-aldebaran/romeo_dcm_robot)
+   - romeo_control (https://github.com/ros-aldebaran/romeo_virtual)
+   - romeo_gazebo_plugin (https://github.com/ros-aldebaran/romeo_virtual)
+
+Launch Gazebo, like this:
+
+.. code-block:: bash
+
+    roslaunch romeo_gazebo_plugin romeo_gazebo_plugin_H37.launch
+
+Wait until it is ready, then click on the Play button in Gazebo.
+
+Finally, start MoveIt!:
+
+.. code-block:: bash
+
+    roslaunch romeo_moveit_config moveit_planner.launch
+
+
 3 Use Moveit:
 =============
 RVIZ has been open: you can see that a MotionPlanning plugin has been launched.
-First check the box "Allow approximate IK Solutions" on the bottom of the left column.
-Then click on the Planning tab.
+First check the box "Allow approximate IK Solutions" on the bottom of the left control panel.
+Then, go to the Planning tab.
 
 Select which part of the robot you want to move:
 In the plugin list on the upper part of the left column, you can select a group under MotionPlanning/Planning Request/Planning Group 
