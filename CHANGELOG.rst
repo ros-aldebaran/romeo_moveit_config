@@ -2,6 +2,23 @@
 Changelog for package romeo_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* cleaning MoveIt config
+* Merge pull request `#7 <https://github.com/ros-aldebaran/romeo_moveit_config/issues/7>`_ from ros-aldebaran/fix_warnings
+  Fix deprecated warnings
+* put parameter in right namespace
+* remove unnecessary tabs
+* remove deprecated service, use action instead
+* fix deprecated xacro call
+* fix allowed_execution_duration_scaling
+* Update README.rst
+* adding RRT as default planner
+* Merge pull request `#6 <https://github.com/ros-aldebaran/romeo_moveit_config/issues/6>`_ from nlyubova/master
+  fixing legs planning groups
+* fixing legs planning groups
+* Contributors: Mikael Arguedas, Natalia Lyubova
+
 0.2.7 (2016-07-21)
 ------------------
 * Update package.xml
