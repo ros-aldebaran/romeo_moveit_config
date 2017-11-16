@@ -2,8 +2,8 @@
 Changelog for package romeo_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.8 (2017-11-16)
+------------------
 * cleaning MoveIt config
 * Merge pull request `#7 <https://github.com/ros-aldebaran/romeo_moveit_config/issues/7>`_ from ros-aldebaran/fix_warnings
   Fix deprecated warnings
